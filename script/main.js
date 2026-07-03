@@ -1,4 +1,6 @@
 import Link from "./const.js"
+
+const fakemon_species = document.getElementById("fakemon_species").innerHTML;
 function generateSpecies(event){
     event.preventDefault;
     fetch(Link.animal_API).then(response => 
@@ -10,11 +12,10 @@ function generateSpecies(event){
     }
 ).then(json =>
 {   
-    const speciesname = json.city;
-    return document.getElementById("fakemon_species").innerHTML = speciesname;
+    return json.city;
 }
 ).catch(error => {
     throw error;
 })
 }
-document.querySelector("#genrateRandomSpecies").addEventListener("click", generateSpecies);
+document.querySelector("#genrateRandomSpecies").addEventListener("click", event => {fakemon_species = generateSpecies(event)});
