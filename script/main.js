@@ -1,8 +1,13 @@
 import Link from "./const"
 function generateSpecies(event){
-event.prenventDefault();    
+event.preventDefault();
+
     fetch(Link.animal_API).then(Response => 
     {
+        console.log(Response);
+        if (!reponse.ok) {
+            throw new Error(`Statut de réponse : ${reponse.status}`);
+        }
         return Response.json;
     }
 ).then(json =>
