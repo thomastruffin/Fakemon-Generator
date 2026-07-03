@@ -1,6 +1,6 @@
 import Link from "./const.js"
 
-const fakemon_species = document.getElementById("fakemon_species").innerHTML;
+let fakemon_species = document.getElementById("fakemon_species").innerHTML;
 function generateSpecies(event){
     event.preventDefault;
     fetch(Link.animal_API).then(response => 
