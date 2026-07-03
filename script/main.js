@@ -8,10 +8,12 @@ function generateSpecies(event){
         if (!response.ok) {
             throw new Error(`Statut de réponse : ${reponse.status}`);
         }
+        console.log(response.json);
         return response.json;
     }
 ).then(json =>
-{
+{   
+    console.log(json);
     const speciesname = json.city;
     return document.getElementById("fakemon_species").innerHTML = speciesname;
 }
