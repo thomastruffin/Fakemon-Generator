@@ -14,7 +14,9 @@ function getRandomType(event){
         console.log("index: "+idx + "svg value: "+svg);
         do {
             index = Math.floor((Math.random()*FakemonType.length));
-            svg = index != svg ? index : svg;
+            if(svg != index){
+              svg = index;
+            }
         }while(svg != index)
         const type = FakemonType[index];
         const fakemon_type_html = document.getElementById("fakemon_type_"+idx);
