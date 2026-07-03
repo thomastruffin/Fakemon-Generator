@@ -1,5 +1,5 @@
 import Link from "./const"
-function generateSpecies(event){
+async function generateSpecies(event){
     event.preventDefault();
 
     return fetch(Link.animal_API).then(Response => 
@@ -19,4 +19,4 @@ function generateSpecies(event){
     throw error;
 })
 }
-document.getElementById("genrateRandomSpecies").addEventListener("click", event => generateSpecies());
+document.getElementById("genrateRandomSpecies").addEventListener("click", event => generateSpecies(event));
