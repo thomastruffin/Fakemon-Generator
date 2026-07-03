@@ -19,4 +19,4 @@ function generateSpecies(event){
     throw error;
 })
 }
-document.getElementById("genrateRandomSpecies").addEventListener("click", event => generateSpecies);
+document.querySelector("#genrateRandomSpecies").addEventListener("click", event => generateSpecies);
