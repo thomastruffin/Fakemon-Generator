@@ -23,7 +23,7 @@ function generateSpecies(event, innerHTML){
 })
 }
 
-const fetch = {
+const fetchFunction = {
     getMyth : function(){},
     generateSpecies:  function(event, innerHTML){
     event.preventDefault;
@@ -44,4 +44,4 @@ const fetch = {
 })
 }
 }
-export default fetch
+export default fetchFunction
