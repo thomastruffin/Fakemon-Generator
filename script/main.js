@@ -8,8 +8,8 @@ function generateSpecies(event){
         if (!response.ok) {
             throw new Error(`Statut de réponse : ${reponse.status}`);
         }
-        console.log(response.json);
-        return response.json;
+        console.log(response.json());
+        return response.json();
     }
 ).then(json =>
 {   
