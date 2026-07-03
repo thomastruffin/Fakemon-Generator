@@ -2,7 +2,7 @@ import Link from "./const"
 async function generateSpecies(event){
     event.preventDefault();
 
-    return fetch(Link.animal_API).then(Response => 
+    /** return fetch(Link.animal_API).then(Response => 
     {
         console.log(Response);
         if (!reponse.ok) {
@@ -17,6 +17,6 @@ async function generateSpecies(event){
 }
 ).catch(error => {
     throw error;
-})
+}) **/
 }
 document.getElementById("genrateRandomSpecies").addEventListener("click", event => generateSpecies(event));
