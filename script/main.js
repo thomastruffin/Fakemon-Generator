@@ -1,6 +1,7 @@
 import Link from "./const"
 async function generateSpecies(event){
-    event.preventDefault;
+    event.preventDefault()
+    console.log(event);
 
     /** return fetch(Link.animal_API).then(Response => 
     {
