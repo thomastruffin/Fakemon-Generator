@@ -20,4 +20,4 @@ async function generateSpecies(event){
     throw error;
 }) **/
 }
-document.getElementById("genrateRandomSpecies").addEventListener("click", event => generateSpecies(event));
+document.getElementById("genrateRandomSpecies").addEventListener("click", event => generateSpecies);
