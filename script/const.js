@@ -80,4 +80,4 @@ const fakemon_type = [
 ]
 
 
-export {fakemon_type , Link};
+export {fakemon_type as "FakemonType" , Link as "Link"};
