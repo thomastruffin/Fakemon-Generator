@@ -2,7 +2,7 @@ import Link from "./const.js"
 function generateSpecies(event){
     event.preventDefault;
     console.log(event);
-    return fetch(Link.animal_API).then(Response => 
+    fetch(Link.animal_API).then(Response => 
     {
         console.log(Response);
         if (!reponse.ok) {
