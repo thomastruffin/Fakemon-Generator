@@ -5,7 +5,7 @@ function generateSpecies(event){
     fetch(Link.animal_API).then(response => 
     {
         console.log(response);
-        if (!reponse.ok) {
+        if (!response.ok) {
             throw new Error(`Statut de réponse : ${reponse.status}`);
         }
         return response.json;
