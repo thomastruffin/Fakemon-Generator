@@ -1,5 +1,5 @@
 import Link from "./const"
-async function generateSpecies(event){
+function generateSpecies(event){
     event.preventDefault()
     console.log(event);
 
