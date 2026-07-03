@@ -1,4 +1,4 @@
-import Link from "./const.js"
+import {Link} from "./const.js"
 
 function getMyth(){
     
