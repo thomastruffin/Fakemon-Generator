@@ -80,5 +80,4 @@ const fakemon_type = [
 ]
 
 
-export default fakemon_type;
-export default Link;
+export {fakemon_type , Link};
