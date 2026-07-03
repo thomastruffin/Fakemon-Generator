@@ -11,7 +11,7 @@ function getRandomType(event){
     for(let idx=1 ; idx <= typeNumber ; idx++ ){
         const type = FakemonType[Math.floor((Math.random()*FakemonType.length))];
         const fakemon_type_html = document.getElementById("fakemon_type_"+idx);
-        fakemon_type.innerHTML = type.type;
+        fakemon_type_html.innerHTML = type.type;
         fakemon_type_html.style.color = type.color;
         
     }
