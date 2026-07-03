@@ -8,8 +8,14 @@ document.querySelector("#generateType").addEventListener("click", event => getRa
 function getRandomType(event){
     event.preventDefault();
     const typeNumber = Math.round(Math.random()*2);
+    let svg = -1
     for(let idx=1 ; idx <= typeNumber ; idx++ ){
-        const type = FakemonType[Math.floor((Math.random()*FakemonType.length))];
+        let index = Math.floor((Math.random()*FakemonType.length));
+        do {
+            index = Math.floor((Math.random()*FakemonType.length));
+        }while(svg != index)
+        svg = index;
+        const type = FakemonType[index];
         const fakemon_type_html = document.getElementById("fakemon_type_"+idx);
         fakemon_type_html.innerHTML = type.type;
         fakemon_type_html.style.color = type.color;
