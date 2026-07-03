@@ -10,7 +10,7 @@ function getRandomType(event){
     const typeNumber = Math.round(Math.random()*2);
     let svg = -1
     for(let idx=1 ; idx <= typeNumber ; idx++ ){
-        let index = Math.floor((Math.random()*FakemonType.length));
+        let index = Math.round((Math.random()*FakemonType.length));
         console.log("index: "+idx + "svg value: "+svg);
         do {
             index = Math.floor((Math.random()*FakemonType.length));
