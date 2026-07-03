@@ -8,10 +8,10 @@ event.prenventDefault();
 ).then(json =>
 {
     const speciesname = json.city;
-    return document.getElementById("speciesname").innerHTML = speciesname;
+    return document.getElementById("fakemon_species").innerHTML = speciesname;
 }
 ).catch(error => {
     throw error;
 })
 }
-document.getElementById("randomBtn").addEventListener("click", event => generateSpecies());
+document.getElementById("genrateRandomSpecies").addEventListener("click", event => generateSpecies());

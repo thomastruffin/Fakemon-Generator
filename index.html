@@ -16,112 +16,11 @@
         </header>
 
         <main class="main-content">
-            <div class="container">
-                <section class="generator-section">
-                    <div class="controls">
-                        <button id="generateBtn" class="btn btn-primary">Generate Fakemon</button>
-                        <p>Species name: <span id="speciesname"></span></p>
-                        <button id="randomBtn" class="btn btn-secondary">Random</button>
-                        <button id="saveBtn" class="btn btn-success">Save Fakemon</button>
-                        <button id="clearBtn" class="btn btn-danger">Clear</button>
-                    </div>
-
-                    <div class="content-wrapper">
-                        <div class="fakemon-display">
-                            <div id="fakemonCard" class="fakemon-card">
-                                <div class="card-placeholder">
-                                    <p>Generate a Fakemon to start</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="fakemon-details">
-                            <div class="details-panel">
-                                <h2>Fakemon Details</h2>
-                                <div class="details-form">
-                                    <div class="form-group">
-                                        <label for="name">Name:</label>
-                                        <input type="text" id="name" placeholder="Fakemon name" readonly>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="type">Type:</label>
-                                        <input type="text" id="type" placeholder="Type" readonly>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="description">Description:</label>
-                                        <textarea id="description" placeholder="Fakemon description" readonly rows="4"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="abilities">Abilities:</label>
-                                        <input type="text" id="abilities" placeholder="Abilities" readonly>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="weaknesses">Weaknesses:</label>
-                                        <input type="text" id="weaknesses" placeholder="Weaknesses" readonly>
-                                    </div>
-
-                                    <div class="stats-section">
-                                        <h3>Stats</h3>
-                                        <div class="stat-bar">
-                                            <label>HP:</label>
-                                            <div class="stat-bar-container">
-                                                <div id="hpBar" class="stat-bar-fill"></div>
-                                            </div>
-                                            <span id="hpValue">0</span>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <label>Attack:</label>
-                                            <div class="stat-bar-container">
-                                                <div id="attackBar" class="stat-bar-fill"></div>
-                                            </div>
-                                            <span id="attackValue">0</span>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <label>Defense:</label>
-                                            <div class="stat-bar-container">
-                                                <div id="defenseBar" class="stat-bar-fill"></div>
-                                            </div>
-                                            <span id="defenseValue">0</span>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <label>Sp. Atk:</label>
-                                            <div class="stat-bar-container">
-                                                <div id="spaBar" class="stat-bar-fill"></div>
-                                            </div>
-                                            <span id="spaValue">0</span>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <label>Sp. Def:</label>
-                                            <div class="stat-bar-container">
-                                                <div id="spdBar" class="stat-bar-fill"></div>
-                                            </div>
-                                            <span id="spdValue">0</span>
-                                        </div>
-                                        <div class="stat-bar">
-                                            <label>Speed:</label>
-                                            <div class="stat-bar-container">
-                                                <div id="speedBar" class="stat-bar-fill"></div>
-                                            </div>
-                                            <span id="speedValue">0</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="saved-section">
-                    <h2>Saved Fakemon</h2>
-                    <div id="savedList" class="saved-list">
-                        <p class="empty-state">No saved Fakemon yet</p>
-                    </div>
-                </section>
-            </div>
+            <form>
+                <span>Generate a random species</span> 
+                <button id="genrateRandomSpecies" name="genrateRandomSpecies">generate</button>
+            </form>
+            <p id="fakemon_species"></p>
         </main>
 
         <footer class="footer">
@@ -129,11 +28,6 @@
         </footer>
     </div>
 
-    <script src="js/data/types.js"></script>
-    <script src="js/data/names.js"></script>
-    <script src="js/utils/generator.js"></script>
-    <script src="js/utils/storage.js"></script>
-    <script src="js/components/ui.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./script/main.js" defer/>
 </body>
 </html>
