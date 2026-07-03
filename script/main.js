@@ -1,4 +1,4 @@
-import Link from "./const"
+import Link from "./const.js"
 function generateSpecies(event){
     event.preventDefault;
     console.log(event);
